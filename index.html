@@ -2,131 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="this is person">
+  <title>Portifolio</title>
   <style>
     *{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    .parent{
+    body{
+    }
+    nav{
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: black;
+      font-size: 30px;
+      gap: 150px;
+    }
+    nav ul{
+      list-style: none;
       display: flex;
       justify-content: space-evenly;
-      align-items: center;
-      background-color: brown;
-      padding: 20px;
-
+      align-items: center;  
+      height: 50px;
+      font-size: 20px;
     }
-
-    .image{
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
+    nav ul li{
+      margin: 40px;
     }
-    .image img{
+    nav ul li a{
+      text-decoration: none;
+      color: black;
+    }
+    .childrenOne{
+      width: 250px;
+      height: 250px;
+    }
+    .childrenOne img{
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 50%;
     }
-    .children{
+    .parent{
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
-      gap: 20px
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      height: 300px;
+    }
+    .childrenTwo{
+      line-height: 40px;
+    }
+    .childrenTwo h1{
+      font-size: 30px;
+      color: black;
+      font-weight: bold;
+    }
+    .childrenTwo p {
+      color: black;
+      font-size: 15px;
+      text-align: center;
       
     }
-    .children button{
-      width: 150px;
+    .childrenTwo h3{
+      color: rgb(108, 106, 106);
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .childrenTwosub{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      color: white;
+      border-radius: 5px;
+    } 
+    .childrenTwosub button{
+      width: 170px;
       height: 50px;
-      background-color: green;
-      color: white;
-      border-radius: 30px;
       cursor: pointer;
-      border-color: white;
-      
-    }
-    .name{
-      font-weight: bold;
-      font-size: 20px;
-      text-transform: uppercase;
+      background-color: blue;
       color: white;
+      border-radius: 100px;
     }
-    nav ul{
+    .childrenTwo .download{
+      background-color: white;
+      border-color: black;
+      border-width: 1px;
+      color: black;
+    }
+    .childrenTwo .contact{
       background-color: black;
-      display: flex;
-      justify-content: flex-end;
-      flex-direction: row;
-      list-style: none;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-right: 150px;
-      padding-left: 150px;
-    }
-    nav ul p {
-      margin-right: 20px;
+      border: none;
       color: white;
-      font-size: 20px;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a{
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-    .logo {
-      width: 10px;
-      height: 10px;
     }
   </style>
 </head>
 <body>
   <header>
     <nav>
+      <h1>MUHUMUZA</h1>
       <ul>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="#project">experience</a></li>
-        <li><a href="#project">project</a></li>
-        <li><a href="#project">contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <!-- <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav> -->
   </header>
+
+
   <section>
-    <section id="about" class="parent">
-      <div class="image">
+    <section class="parent">
+      <div class="childrenOne">
         <img src="./assets/about-pic.png" alt="">
       </div>
-      <div>
-        <h2>Hello</h2>
-        <h2> <span class="name">MUHUMUZA</span> jean pierre</h2>
-        <h2>FULL STACK</h2>
-        <div class="children">
-          <button>Download</button>
-          <button>contact</button>
+      <div class="childrenTwo">
+        <p>Hello, I'm</p>
+        <h1>MUHUMUZA Jean Pierre</h1>
+        <h3>FullStack Developer</h3>
+        <div class="childrenTwosub">
+          <button class="download">Download Noww</button>
+          <button class="contact">Contact Info</button>
         </div>
         <div>
-
+          <i></i>
+          <i></i>
         </div>
       </div>
     </section>
-    <section id="experience">
-
-    </section>
-    <section id="project">
-
-    </section>
-    <section></section>
     <section></section>
   </section>
   <footer></footer>
